@@ -1,0 +1,353 @@
+@font-face {
+  font-family:'Interstate';
+  src: url('../fonts/InterstateWGL-Bold.ttf') format('truetype');     
+}
+
+@font-face {
+  font-family:'tm-bold';
+  src: url('../fonts/TMSans-Bold.ttf') format('truetype');     
+}
+@font-face {
+  font-family:'tm-reg';
+  src: url('../fonts/TMSans-Regular.ttf') format('truetype');     
+}
+@font-face {
+  font-family:'tm-reg';
+  src: url('../fonts/TMSans-Regular.ttf') format('truetype');     
+}
+
+.interstate{
+	font-family:"Interstate";
+}
+
+.tm-bold{
+	font-family:"tm-bold";
+}
+
+.tm-reg{
+	font-family:"tm-reg";
+}
+
+.row{
+	max-width:68rem;
+}
+
+$ticket-blue:#009cde;
+$ticket-pink:#d0006f;
+
+
+a{
+	color:white;	
+}
+
+header{
+	position:absolute;
+	height:60px;
+	width:100%;
+	z-index:999;
+
+	img{
+		margin:28px 33px;
+		height:27px;
+		width:auto;
+	}
+}
+
+.opacity-layer{
+	position:absolute;
+	height:98vh;
+	width:100%;
+	background: linear-gradient(#ffb46a, #d2066f);
+	opacity:0.7;
+	z-index:0;
+}	
+
+.welcome-section{
+	position:relative;
+	height:98vh;
+	width:100%;
+	background-image: url("../images/background1.jpg");
+	background-size: cover;
+	text-align:center;
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+	.logo{
+		position:relative;
+		height:286px;
+		width:427px;
+		margin:0 auto;
+		padding-top:97px;
+		
+		img{
+			float:left;
+			width:168px;
+		}
+
+		h1{
+			display:inline-block;
+			color:white;
+			font-size:91px;
+			padding:5px 0 0 0;
+			margin: 14px 0 0 6px;
+			@extend .interstate;
+		}
+	}
+
+	.slogan{
+		position:relative;
+		color:white;
+		font-size:35px;
+		margin:8px 0 0 0;
+		text-transform:uppercase;
+		@extend .interstate;
+
+	}
+
+
+
+	.festival-logos{
+		position:relative;
+		margin-top:49px;
+
+		img{
+			height:auto;
+			width:190px;
+			padding:10px;
+		}
+	}
+
+}
+
+#content{
+	position:relative;
+	height:auto;
+	width:100%;
+
+	.explore-button{
+		position:absolute;
+		top:-41px;
+		/* responsively center button */
+		left:50%;
+		transform: translate(-50%, 0);
+		height:58px;
+		width:160px;
+		margin:0 auto;
+		padding:4px 14px;
+		background-color:white;
+		color:$ticket-pink;
+		border-radius: 10px 10px 0 0;
+		cursor:pointer;
+		font-size:26px;
+		text-transform:uppercase;
+		@extend .interstate;
+	}
+
+	h1{
+		@extend .interstate;
+		text-transform: uppercase;
+		background-color: $ticket-blue;
+		color:white;
+		padding:5px 13px;
+		margin:0 0 32px 0;
+
+	}
+
+	#intro{
+		height:338px;
+		width:100%;
+		margin:35px 0;
+
+		.sub-section{
+			width:50%;
+			height:inherit;
+			float:left;
+			margin-bottom:20px;
+			padding:5px;
+			transition: all 0.5s;
+			opacity:0;
+			img{
+				display:block;
+				margin:0 39px 28px 39px;
+			}
+		}
+
+		.one{
+			transform: translate(-20%, 0);
+		}
+
+		.two{
+			transform: translate(20%, 0);
+		}
+
+	}
+
+	p{
+		@extend .tm-reg;
+	}
+
+	.images{
+		
+		width:100%;
+
+		img{
+			width:193px;
+			transition: all 0.2s;
+
+			&:hover{
+				transform:scale(1.1, 1.1);
+			}
+		}
+
+		.row div{
+			margin-bottom:32px;
+
+		}
+
+		.column-block{
+			height:193px;
+		}
+	}
+
+	.on-offer{
+		/*clearfix for auto height */
+		height:413px;
+		width:100%;
+		color:white;
+		margin-bottom:32px;
+
+		.main-offer{
+			height:338px;
+			width:40%;
+			padding:0 5px 5px 0;
+			float:left;
+
+			img{
+				height:238px;
+			}
+
+			p{
+				height:93px;
+				background-color:#414141;
+				padding:5px;
+			}
+		}
+
+		.sub-offers{
+			height:338px;
+			width:60%;
+			float:right;
+
+			div{
+				height:50%;
+				width:33.3%;
+				float:left;
+				padding:0 5px;
+				text-align:center;
+
+
+				img{
+					height:115px;
+					width:100%;
+				}
+
+				p{
+					height:47px;
+					background-color:#414141;
+					padding:10px;
+				}
+
+				&:nth-of-type(3n){
+					padding-right:0;
+				}
+
+				&:hover{
+					p {
+						background-color:$ticket-pink;	
+					}
+				}
+			}
+
+		}
+	}
+
+	.vids{
+
+		width:100%;
+	}
+
+}
+
+.buy-tickets{
+	position:fixed;
+	height:75px;
+	width:100%;
+	bottom:-200px;
+	background-color:$ticket-blue;
+	color:white;
+	padding:9px 10px;
+	@extend .tm-reg;
+	font-size:34px;
+	border-top:2px solid #414141;
+	text-align:center;
+	transition: all 0.5s;
+
+	span{
+		border:3px solid white;
+		padding:1px 5px;
+		display:inline-block;
+		margin-left:15px;
+		@extend .tm-bold;
+	}
+}
+
+/* For "buy-ticket" pop-up */
+.up{
+	
+	bottom:0px;
+}
+
+footer{
+	height:300px;
+	width:100%;
+	padding-top:30px;
+	/*background-color:#414141;*/
+	border-top:2px solid $ticket-pink;
+
+	a{
+		color:#414141;
+	}
+
+	.footer-sub-section{
+		width:25%;
+		float:left;
+
+		ul{
+			list-style:none;
+			margin:0 0 0 0;
+		}
+
+		li{
+			padding:6px;
+
+			&:nth-of-type(1){
+				font-weight:bold;
+				padding-top:0;
+			}
+		}
+		
+		img{
+			height:142px;
+			width:auto;
+			margin:0 0 0 5px;
+		}
+
+		p{
+			font-weight:bold;
+		}
+	}
+}

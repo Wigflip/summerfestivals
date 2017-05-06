@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'Interstate';
+  src: url("../fonts/InterstateWGL-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'tm-bold';
+  src: url("../fonts/TMSans-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'tm-reg';
+  src: url("../fonts/TMSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'tm-reg';
+  src: url("../fonts/TMSans-Regular.ttf") format("truetype"); }
+.interstate, .welcome-section .logo h1, .welcome-section .slogan, #content .explore-button, #content h1 {
+  font-family: "Interstate"; }
+
+.tm-bold, .buy-tickets span {
+  font-family: "tm-bold"; }
+
+.tm-reg, #content p, .buy-tickets {
+  font-family: "tm-reg"; }
+
+.row {
+  max-width: 68rem; }
+
+a {
+  color: white; }
+
+header {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  z-index: 999; }
+  header img {
+    margin: 28px 33px;
+    height: 27px;
+    width: auto; }
+
+.opacity-layer {
+  position: absolute;
+  height: 98vh;
+  width: 100%;
+  background: linear-gradient(#ffb46a, #d2066f);
+  opacity: 0.7;
+  z-index: 0; }
+
+.welcome-section {
+  position: relative;
+  height: 98vh;
+  width: 100%;
+  background-image: url("../images/background1.jpg");
+  background-size: cover;
+  text-align: center;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .welcome-section .logo {
+    position: relative;
+    height: 286px;
+    width: 427px;
+    margin: 0 auto;
+    padding-top: 97px; }
+    .welcome-section .logo img {
+      float: left;
+      width: 168px; }
+    .welcome-section .logo h1 {
+      display: inline-block;
+      color: white;
+      font-size: 91px;
+      padding: 5px 0 0 0;
+      margin: 14px 0 0 6px; }
+  .welcome-section .slogan {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    margin: 8px 0 0 0;
+    text-transform: uppercase; }
+  .welcome-section .festival-logos {
+    position: relative;
+    margin-top: 49px; }
+    .welcome-section .festival-logos img {
+      height: auto;
+      width: 190px;
+      padding: 10px; }
+
+#content {
+  position: relative;
+  height: auto;
+  width: 100%; }
+  #content .explore-button {
+    position: absolute;
+    top: -41px;
+    /* responsively center button */
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 58px;
+    width: 160px;
+    margin: 0 auto;
+    padding: 4px 14px;
+    background-color: white;
+    color: #d0006f;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    font-size: 26px;
+    text-transform: uppercase; }
+  #content h1 {
+    text-transform: uppercase;
+    background-color: #009cde;
+    color: white;
+    padding: 5px 13px;
+    margin: 0 0 32px 0; }
+  #content #intro {
+    height: 338px;
+    width: 100%;
+    margin: 35px 0; }
+    #content #intro .sub-section {
+      width: 50%;
+      height: inherit;
+      float: left;
+      margin-bottom: 20px;
+      padding: 5px;
+      transition: all 0.5s;
+      opacity: 0; }
+      #content #intro .sub-section img {
+        display: block;
+        margin: 0 39px 28px 39px; }
+    #content #intro .one {
+      transform: translate(-20%, 0); }
+    #content #intro .two {
+      transform: translate(20%, 0); }
+  #content .images {
+    width: 100%; }
+    #content .images img {
+      width: 193px;
+      transition: all 0.2s; }
+      #content .images img:hover {
+        transform: scale(1.1, 1.1); }
+    #content .images .row div {
+      margin-bottom: 32px; }
+    #content .images .column-block {
+      height: 193px; }
+  #content .on-offer {
+    /*clearfix for auto height */
+    height: 413px;
+    width: 100%;
+    color: white;
+    margin-bottom: 32px; }
+    #content .on-offer .main-offer {
+      height: 338px;
+      width: 40%;
+      padding: 0 5px 5px 0;
+      float: left; }
+      #content .on-offer .main-offer img {
+        height: 238px; }
+      #content .on-offer .main-offer p {
+        height: 93px;
+        background-color: #414141;
+        padding: 5px; }
+    #content .on-offer .sub-offers {
+      height: 338px;
+      width: 60%;
+      float: right; }
+      #content .on-offer .sub-offers div {
+        height: 50%;
+        width: 33.3%;
+        float: left;
+        padding: 0 5px;
+        text-align: center; }
+        #content .on-offer .sub-offers div img {
+          height: 115px;
+          width: 100%; }
+        #content .on-offer .sub-offers div p {
+          height: 47px;
+          background-color: #414141;
+          padding: 10px; }
+        #content .on-offer .sub-offers div:nth-of-type(3n) {
+          padding-right: 0; }
+        #content .on-offer .sub-offers div:hover p {
+          background-color: #d0006f; }
+  #content .vids {
+    width: 100%; }
+
+.buy-tickets {
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  bottom: -200px;
+  background-color: #009cde;
+  color: white;
+  padding: 9px 10px;
+  font-size: 34px;
+  border-top: 2px solid #414141;
+  text-align: center;
+  transition: all 0.5s; }
+  .buy-tickets span {
+    border: 3px solid white;
+    padding: 1px 5px;
+    display: inline-block;
+    margin-left: 15px; }
+
+/* For "buy-ticket" pop-up */
+.up {
+  bottom: 0px; }
+
+footer {
+  height: 300px;
+  width: 100%;
+  padding-top: 30px;
+  /*background-color:#414141;*/
+  border-top: 2px solid #d0006f; }
+  footer a {
+    color: #414141; }
+  footer .footer-sub-section {
+    width: 25%;
+    float: left; }
+    footer .footer-sub-section ul {
+      list-style: none;
+      margin: 0 0 0 0; }
+    footer .footer-sub-section li {
+      padding: 6px; }
+      footer .footer-sub-section li:nth-of-type(1) {
+        font-weight: bold;
+        padding-top: 0; }
+    footer .footer-sub-section img {
+      height: 142px;
+      width: auto;
+      margin: 0 0 0 5px; }
+    footer .footer-sub-section p {
+      font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
